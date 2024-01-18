@@ -54,7 +54,7 @@ button:hover {
 #header, #luasPage,
 #kelilingPage {
     margin-top: 20px;
-    background-color: skyblue;
+    background-color: rgb(148, 213, 239);
     padding: 25px;
 }
 
