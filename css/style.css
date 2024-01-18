@@ -17,6 +17,10 @@ body {
     text-align: center;
 }
 
+.calculator img{
+    width: 80px;
+}
+
 h1{
     padding-top: 385px;
 }
