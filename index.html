@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Katik - Kalkulator Matematik</title>
+</head>
+<body>
+
+<div class="calculator">
+    <div id="header">
+        <h1>Katik - Kalkulator Matematik</h1>
+        <p>Selamat datang di web sederhana KATIK (kalkulator matematik). <br>Untuk saat ini, Anda dapat menghitung luas dan keliling dari bangun datar persegi.</p>
+    </div>
+
+    <div id="luasPage">
+        <h2>Luas Persegi</h2>
+        <p>Rumus Luas: <br>Luas = sisi × sisi</p>
+        <label for="luasSideLength">Panjang Sisi:</label>
+        <input type="number" id="luasSideLength" placeholder="Masukkan panjang sisi">
+        <button onclick="calculateArea()">Hitung Luas</button>
+        <div id="luasResultContainer">
+            <p id="luasCalculationDetails"></p>
+            <p>Luas = <span id="luasAreaResult">-</span></p>
+        </div>
+        <button onclick="goBack()">Reset</button>
+    </div>
+
+    <div id="kelilingPage">
+        <h2>Keliling Persegi</h2>
+        <p>Rumus Keliling: <br>Keliling = 4 × sisi</p>
+        <label for="kelilingSideLength">Panjang Sisi:</label>
+        <input type="number" id="kelilingSideLength" placeholder="Masukkan panjang sisi">
+        <button onclick="calculatePerimeter()">Hitung Keliling</button>
+        <div id="kelilingResultContainer">
+            <p id="kelilingCalculationDetails"></p>
+            <p>Keliling = <span id="kelilingPerimeterResult">-</span></p>
+        </div>
+        <button onclick="goBack()">Reset</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
